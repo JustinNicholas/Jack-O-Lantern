@@ -2,37 +2,203 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+/* .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main {
+  padding-top: 20px;
+  /* background-image: url('../public/Images/Desktop.png'); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #1b083d;
+  min-height: 100vh;
+  color: white;
 }
+
+.zone-container {
+  margin-top: -50px;
+  position: relative;
+  width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.creation-zone {
+  position: absolute;
+  width: 850px;
+  height: 850px;
+  /* border: 1px solid white; */
+}
+
+.options-zone {
+  position: absolute;
+  width: 660px;
+  height: 140px;
+  /* overflow-x: scroll;
+  overflow-y: hidden; */
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  left: 15px;
+}
+
+.pumpkin-options-zone {
+  position: absolute;
+  width: 550px;
+  height: 140px;
+  /* overflow-x: scroll;
+  overflow-y: hidden; */
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  left: 65px;
+}
+
+.features-options-zone {
+
+  position: absolute;
+  /* background-color: rgba(255, 255, 255, 0.100); */
+  width: 690px;
+  height: 150px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: inline-flex;
+}
+  ::-webkit-scrollbar {
+  width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+  }
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 166, 0, 0.500);
+  }
+
+.options-container {
+  background-color: rgba(255, 255, 255, 0.100);
+  position: relative;
+  width: 690px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 140px;
+  margin-top: 700px;
+  /* margin-bottom: 60px; */
+  display: flex;
+  flex-wrap: nowrap;
+  border-radius: 5px;
+}
+
+.scroll-options-container {
+  background-color: rgba(255, 255, 255, 0.100);
+  position: relative;
+  width: 690px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 140px;
+  margin-top: 700px;
+  /* margin-bottom: 60px; */
+  display: flex;
+  flex-wrap: nowrap;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.pumpkin {
+  position: absolute;
+  z-index: 1;
+  left: 25px;
+  bottom: 200px;
+  min-height: 800px;
+  max-height: 800px;
+}
+
+.eyes {
+  position: absolute;
+  bottom: 440px;
+  left: 300px;
+  z-index: 2;
+}
+
+.glow {
+  position: absolute;
+  left: 0px;
+}
+
+.nose {
+  position: absolute;
+  bottom: 370px;
+  left: 300px;
+  z-index: 2;
+}
+
+.mouth {
+  position: absolute;
+  bottom: 290px;
+  left: 300px;
+  z-index: 2;
+}
+
+.option-button {
+  min-width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.100);
+  /* display: inline-flex; */
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.option-button:hover {
+  background-color: rgba(255, 255, 255, 0.500);
+}
+
+.no-margin {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  line-height: 100px;
+  top: 0px;
+  font-weight: bold;
+}
+
+.features {
+  position: absolute;
+  left: 0;
+  top: 24px;
+  width: 100px;
+  height: 52px;
+}
+
+/* #canvas {
+  position: relative;
+  border: 3px solid green;
+} */
